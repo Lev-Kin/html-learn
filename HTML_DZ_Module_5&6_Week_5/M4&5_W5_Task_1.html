@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>M4&5_W5_Task_1</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-color: whitesmoke;
+            margin: 24px 32px 24px 32px;
+            min-width: 480px;
+            max-width: 800px;
+            min-height: 320px;
+            max-height: 480px;
+        }
+
+        table {
+            /*установливаем ширину таблицы в % от ширины body*/
+            width: 100%;
+
+            /*
+            чтобы таблица сильно не сжималась и не растягивалась
+            при изменении ширины окна браузера, прописываем
+            минимальную и максимальную ширину в пикселях
+            */
+            min-width: 580px;
+            max-width: 700px;
+
+            /*убираем отступы между ячейками*/
+            border-collapse: collapse;
+
+            /*устанавливаем системный шрифт для текста*/
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*
+        Положение использования:
+        липкое, чтобы он прилипал к краю и вверху,
+        вправо или влево, чтобы выбрать, к какому краю приклеиваться:
+        */
+        thead th {
+            position: sticky;
+            top: 0;
+        }
+
+        tbody th {
+            position: sticky;
+            left: 0;
+        }
+
+        /* Чтобы заголовок в первом столбце придерживался слева: */
+        thead th:first-child {
+            left: 0;
+            z-index: 1;
+        }
+
+        /* Просто чтобы красиво это отобразить:*/
+        thead th {
+            background: rgb(170, 215, 230);
+        }
+
+        tbody th {
+            background: rgb(170, 215, 230);
+        }
+
+        td,
+        th {
+            padding: 0.8em;
+        }
+
+        tr:nth-child(odd) {
+            background-color: whitesmoke;
+        }
+
+        tr:nth-child(even) {
+            background-color: lightgray;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+                <th>Header 4</th>
+                <th>Header 5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Line 1</th>
+                <td>23</td>
+                <td>123</td>
+                <td>43</td>
+                <td>12</td>
+                <td>76</td>
+
+            </tr>
+            <tr>
+                <th>Line 2</th>
+                <td>23</td>
+                <td>123</td>
+                <td>43</td>
+                <td>12</td>
+                <td>76</td>
+
+            </tr>
+            <tr>
+                <th>Line 2</th>
+                <td>34</td>
+                <td>63</td>
+                <td>25</td>
+                <td>7</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <th>Line 3</th>
+                <td>23</td>
+                <td>23</td>
+                <td>23</td>
+                <td>23</td>
+                <td>23</td>
+
+            </tr>
+            <tr>
+                <th>Line 4</th>
+                <td>23</td>
+                <td>23</td>
+                <td>23</td>
+                <td>23</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <th>Line 5</th>
+                <td>23</td>
+                <td>23</td>
+                <td>23</td>
+                <td>23</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <th>Line 6</th>
+                <td>23</td>
+                <td>23</td>
+                <td>23</td>
+                <td>23</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <th>Line 1</th>
+                <td>23</td>
+                <td>23</td>
+                <td>23</td>
+                <td>23</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <th>Line 7</th>
+                <td>23</td>
+                <td>23</td>
+                <td>23</td>
+                <td>23</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <th>Line 8</th>
+                <td>23</td>
+                <td>23</td>
+                <td>23</td>
+                <td>23</td>
+                <td>23</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

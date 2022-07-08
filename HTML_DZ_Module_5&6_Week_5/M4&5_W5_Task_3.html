@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>M4&5_W5_Task_3</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            background-color: whitesmoke;
+            margin-top: 64px;
+            margin-left: 32px;
+            min-width: 1080px;
+            max-width: 1280px;
+        }
+
+        .container {
+            width: 220px;
+            height: 420px;
+            box-shadow: 0 0 10px rgba(105, 105, 105, 0.5);
+            border-radius: 8px;
+            position: relative;
+            /* margin: 2rem; */
+        }
+
+        .container::before,
+        .container::after {
+            content: "";
+            display: table;
+        }
+
+        .container::after {
+            clear: both
+        }
+
+        .bloc {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: white;
+            height: 100%;
+            transform: scale(1);
+            transition: transform 1s;
+            box-shadow: 0 0 10px dimgray;
+            border-radius: 8px;
+
+            float: left;
+            margin-right: 12px;
+            margin-left: 12px;
+        }
+
+        .bloc:hover {
+            transform: scale(1.2);
+        }
+
+        .header {
+            margin: 1px;
+            padding: 24px 0px 0px 0px;
+            font-size: 18px;
+        }
+
+        hr {
+            width: 97%;
+            border: 3px solid;
+        }
+
+        .price {
+            font-size: 48px;
+            margin: 8px;
+        }
+
+        p {
+            margin: 4px 24px 16px 24px;
+        }
+
+        .bloc-button {
+            margin: 16px 0px 24px 0px;
+            padding: 16px 32px 16px 32px;
+            /* position: bottom; */
+            border-radius: 8px;
+            transition: transform 1s;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="contener">
+
+            <div class="bloc">
+                <h1 class="header">ENTERPRISE</h1>
+                <hr style="border-color: rgb(200, 55, 85);">
+                <div class="price">$69</div>
+                <p><span style="font-size: 18px; color:darkgray;">per month</span></p>
+                <p><br>10GB disk space</p>
+                <p>100GB monthly bandwidth</p>
+                <p>20 email accounts</p>
+                <p>Unlimited subdomens</p>
+                <div class="bloc-button" style="background-color:rgb(200, 55, 85);">BUY</div>
+            </div>
+
+            <div class="bloc">
+                <h1 class="header">PROFESSIONAL</h1>
+                <hr style="border-color: rgb(215, 145, 60);">
+                <div class="price">$29</div>
+                <p><span style="font-size: 18px; color:darkgray;">per month</span></p>
+                <p><br>5GB disk space</p>
+                <p>60GB monthly bandwidth</p>
+                <p>10 email accounts</p>
+                <p>Unlimited subdomens</p>
+                <div class="bloc-button" style="background-color:rgb(215, 145, 60);">BUY</div>
+            </div>
+
+            <div class="bloc">
+                <h1 class="header">STANDARD</h1>
+                <hr style="border-color: rgb(45, 100, 140);">
+                <div class="price">$19</div>
+                <p><span style="font-size: 18px; color:darkgray;">per month</span></p>
+                <p><br>3GB disk space</p>
+                <p>30GB monthly bandwidth</p>
+                <p>5 email accounts</p>
+                <p>Unlimited subdomens</p>
+                <div class="bloc-button" style="background-color:rgb(45, 100, 140);">BUY</div>
+            </div>
+
+            <div class="bloc">
+                <h1 class="header">BASIC</h1>
+                <hr style="border-color: rgb(100, 190, 50);">
+                <div class="price">$9</div>
+                <p><span style="font-size: 18px; color:darkgray;">per month</span></p>
+                <p><br>1GB disk space</p>
+                <p>10GB monthly bandwidth</p>
+                <p>2 email accounts</p>
+                <p>Unlimited subdomens</p>
+                <div class="bloc-button" style="background-color:rgb(100, 190, 50);">BUY</div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

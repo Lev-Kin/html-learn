@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>M3_W3_Task_4</title>
+    <style>
+        body {
+            font-family: Arial, Verdana, sans-serif;
+            font-size: 16px;
+            color: white;
+            font-weight: bold;
+            background-color: whitesmoke;
+            margin: 24px 32px 24px 32px;
+            min-width: 1080px;
+            max-width: 1280px;
+        }
+
+        footer {
+            background-color: rgb(40, 80, 110);
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        nav {
+            width: 33%;
+            display: inline-block;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 128px;
+        }
+
+        .inline li {
+            display: inline-block;
+        }
+
+        li:hover {
+            text-decoration: underline;
+        }
+
+        .facebook,
+        .instagram,
+        .youtube {
+            width: 64px;
+            height: 64px;
+            transform: scale(0.7);
+            display: block;
+        }
+
+        .instagram {
+            background-image: url(insta_gray.png);
+        }
+
+        .instagram:hover {
+            background-image: url(insta.png);
+        }
+
+        .youtube {
+            background-image: url(youtube_gray.png);
+        }
+
+        .youtube:hover {
+            background-image: url(youtube.png);
+        }
+
+        .facebook {
+            background: url(fb_gray.png);
+        }
+
+        .facebook:hover {
+            background: url(fb.png);
+        }
+    </style>
+</head>
+
+<body>
+    <footer style="padding: 32px">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Privacy & cookies</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="inline">
+                <li><a href="http://facebook.com" class="facebook"></a></li>
+                <li><a href="http://instagram.com" class="instagram"></a></li>
+                <li><a href="http://youtube.com" class="youtube"></a></li>
+            </ul>
+        </nav>
+        <hr>
+        <h5 style="text-align: center; font-weight: lighter; padding-top: 8px;">Copiright &copy; Cmpany 2018 - 2019</h5>
+    </footer>
+</body>
+
+</html>
